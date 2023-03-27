@@ -1,0 +1,28 @@
+{
+  "name": "lovin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "prestart": "npm run swagger-autogen",
+    "swagger-autogen": "node ./swagger.js"
+  },
+  "author": "lovin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "joi": "^17.9.0",
+    "js": "^0.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "nodemailer": "^6.9.1",
+    "otp-generator": "^4.0.1",
+    "swagger-autogen": "^2.23.1",
+    "swagger-ui-express": "^4.6.2",
+    "validator": "^13.9.0",
+    "yaml": "^2.2.1"
+  }
+}
